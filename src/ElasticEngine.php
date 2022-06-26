@@ -14,7 +14,7 @@ use ScoutElastic\Indexers\IndexerInterface;
 use ScoutElastic\Payloads\TypePayload;
 use stdClass;
 
-abstract class ElasticEngine extends Engine
+class ElasticEngine extends Engine
 {
     /**
      * The indexer interface.
@@ -51,6 +51,21 @@ abstract class ElasticEngine extends Engine
         $this->updateMapping = $updateMapping;
     }
 
+    public function createIndex($name, array $options = [])
+    {
+        // TODO: Implement createIndex() method.
+    }
+
+    public function deleteIndex($name)
+    {
+        // TODO: Implement deleteIndex() method.
+    }
+
+    public function lazyMap(Builder $builder, $results, $model)
+    {
+        // TODO: Implement lazyMap() method.
+    }
+    
     /**
      * {@inheritdoc}
      */
