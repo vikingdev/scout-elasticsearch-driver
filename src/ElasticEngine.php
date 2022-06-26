@@ -14,7 +14,7 @@ use ScoutElastic\Indexers\IndexerInterface;
 use ScoutElastic\Payloads\TypePayload;
 use stdClass;
 
-class ElasticEngine extends Engine
+abstract class ElasticEngine extends Engine
 {
     /**
      * The indexer interface.
